@@ -1,3 +1,6 @@
 import "./styles/main.styl";
 
-console.log("start");
+function greet (firstName, lastName, somethingElse) {
+    return `Hello ${firstName} ${lastName} you are ${somethingElse}!!`;
+  }
+  console.log(greet("Javier", "Rebolledo","awesome"));
