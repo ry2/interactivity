@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <title>harbour-project</title>
  
   </head>
@@ -16,27 +19,49 @@
         JavaScript enabled. Please enable it to continue.</strong
       >
     </noscript>
-    <div class="sticky-container">
-      <div class="hero-section">
-        <h1>Hero section</h1>
-      </div>
-      <div class="horizontal-container">
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
-        <div>Item 5</div>
-        <div>Item 8</div>
-        <div>Item 7</div>
-        <div>Item 9</div>
-        <div>Item 10</div>
-        <div>Item 11</div>
-        <div>Item 12</div>
-      </div>
-    </div>
-    <div class="footer">
-      
-    </div>
+
+
+    <section id="hooks">
+      <div class="hook" id="hook1"></div>
+      <div class="hook" id="hook2"></div>
+      <div class="hook" id="hook3"></div>
+      <div class="hook" id="hook4"></div>
+      <div class="hook" id="hook5"></div>
+      <div class="hook" id="hook6"></div>
+    </section>
+
+
+    <div class="marquee" id="mUp"></div>
+    <div class="marquee" id="mDown"></div>
+
+    <section id="hero">
+      <h1>Hero</h1>
+    </section>
+    
+    <section id="sidescroll">
+
+        <div id="about">
+          <h1>about</h1>
+        </div>
+
+        <div class="project" id="p1">
+            <h1>project 1</h1>
+        </div>
+
+        <div class="project" id="p2">
+            <h1>project 2</h1>
+        </div>
+
+        <div class="project" id="p3">
+            <h1>project 3</h1>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+    </section>
+
     <!-- built files will be auto injected -->
   </body>
 </html>

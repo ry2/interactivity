@@ -1,0 +1,86 @@
+body{
+    overscroll-behavior: none;
+}
+
+.hook {
+    background-color: $backgroundColor;
+    height: 120vw;
+    width: 100vw;
+    border-bottom: 1px solid $foregroundColor;
+    }
+
+.marquee {
+    width: 100vw;
+    height: 80px;
+    background-color: $backgroundColor;
+    position: fixed;
+    z-index: 1000;
+}
+
+#mUp {
+    top:0;
+    border-bottom: 1px solid $foregroundColor;
+}
+
+#mDown {
+    bottom:0;
+    border-top: 1px solid $foregroundColor;
+}
+
+#hero {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidescroll {
+    position: fixed;
+    top:100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: $backgroundColor;
+    border-top: 1px solid $foregroundColor;
+    overflow: hidden;
+    z-index: 460;
+    border-bottom: 1px solid $foregroundColor;
+}
+
+#about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    height: 100vh;
+    width: 100vw;
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 600
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    border-left: 1px solid $foregroundColor;
+    border-bottom: 1px solid $foregroundColor;
+    }
+
+#contact {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundColor;
+    z-index: 450;
+    opacity: 0; 
+}
