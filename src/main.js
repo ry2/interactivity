@@ -9,22 +9,22 @@ function greet (firstName, lastName, somethingElse) {
 
   const about = new ScrollMagic.Scene({triggerElement: "#hook1"});
   about.setTween("#sidescroll", {ease: Power4.easeOut, y: "-100vh"});
-  about.addIndicators();
+  //about.addIndicators();
   about.addTo(controller);
 
   const p1 = new ScrollMagic.Scene({triggerElement: "#hook2"});
   p1.setTween("#p1", {ease: Power2.easeInOut, x: "-100.1vw"});
-  p1.addIndicators();
+  //p1.addIndicators();
   p1.addTo(controller);
 
   const p2 = new ScrollMagic.Scene({triggerElement: "#hook3"});
   p2.setTween("#p2", {ease: Power2.easeInOut, x: "-100.1vw"});
-  p2.addIndicators();
+  //p2.addIndicators();
   p2.addTo(controller);
 
   const p3 = new ScrollMagic.Scene({triggerElement: "#hook4"});
   p3.setTween("#p3", {ease: Power2.easeInOut, x: "-100.1vw"});
-  p3.addIndicators();
+  //p3.addIndicators();
   p3.addTo(controller);
 
 
@@ -40,7 +40,7 @@ function greet (firstName, lastName, somethingElse) {
 
   const aboutScene = new ScrollMagic.Scene({triggerElement: "#hook5", duration: "200%"});
   aboutScene.setTween(tl);
-  aboutScene.addIndicators();
+  //aboutScene.addIndicators();
   aboutScene.addTo(controller2);
 
   //Marquee moves
@@ -48,12 +48,12 @@ function greet (firstName, lastName, somethingElse) {
   
   const mRight = new ScrollMagic.Scene({triggerElement: "#hook1"});
   mRight.setTween("#mRight", {x: "-300vw", ease: Linear.easeNone});
-  mRight.addIndicators();
+  //mRight.addIndicators();
   mRight.addTo(controller3);
 
   const mLeft = new ScrollMagic.Scene({triggerElement: "#hook1"});
   mLeft.setTween("#mLeft", {x: "300vw", ease: Linear.easeNone});
-  mLeft.addIndicators();
+  //mLeft.addIndicators();
   mLeft.addTo(controller3);
 
 
