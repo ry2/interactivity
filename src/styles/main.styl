@@ -3,4 +3,132 @@
 @import "structure.styl";
 @import "fonts.styl"
 
+.pictureContainer {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
 
+.pictureContainer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+
+    
+  }
+#color {
+    height: 100%;
+    width: 100%;
+    background-color: $blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('../assets/img/myface.jpg');
+    background-blend-mode: difference;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero h1 {
+    z-index: 1000;
+    mix-blend-mode: difference;
+    color: $foregroundColor;
+  }
+
+#aboutContent {
+    height: 600px;
+    width: 600px;
+    border: $border;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+  }
+
+.topBar {
+  border-bottom: $border;  
+}
+
+.projectContent {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: white;
+  position: relative;
+}
+
+.projectTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  z-index: 2000;
+  padding: 0;
+  margin: 0;
+  width: 80vw;
+  text-align: center;
+  color: $foregroundColor;
+  mix-blend-mode: difference;
+
+
+}
+
+.projectBox{
+  width: 100%;
+  padding: 8px;
+  border-bottom: $border;  
+  z-index: 5000;
+  mix-blend-mode: difference;
+}
+
+#color2 {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('https://picsum.photos/600/600?random=1');
+  background-blend-mode: difference;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  #color3 {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('https://picsum.photos/600/600?random=2');
+  background-blend-mode: difference;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  #color4 {
+  height: 100%;
+  width: 100%;
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('https://picsum.photos/600/600?random=3');
+  background-blend-mode: difference;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }

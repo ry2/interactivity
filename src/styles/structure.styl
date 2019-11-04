@@ -6,25 +6,34 @@ body{
     background-color: $backgroundColor;
     height: 120vw;
     width: 100vw;
-    border-bottom: 1px solid $foregroundColor;
+    border-bottom: $border;
     }
 
-.marquee {
+.marqueeContainer {
     width: 100vw;
-    height: 80px;
+    height: 64px;
     background-color: $backgroundColor;
     position: fixed;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.marquee {
+    white-space: nowrap;
 }
 
 #mUp {
     top:0;
-    border-bottom: 1px solid $foregroundColor;
+    border-bottom: $border;
 }
 
 #mDown {
     bottom:0;
-    border-top: 1px solid $foregroundColor;
+    border-top: $border;
 }
 
 #hero {
@@ -37,16 +46,17 @@ body{
     align-items: center;
 }
 
+
 #sidescroll {
     position: fixed;
     top:100vh;
     width: 100vw;
     height: 100vh;
     background-color: $backgroundColor;
-    border-top: 1px solid $foregroundColor;
+    border-top: $border;
     overflow: hidden;
     z-index: 460;
-    border-bottom: 1px solid $foregroundColor;
+    border-bottom: $border;
 }
 
 #about {
@@ -55,7 +65,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+
 
 .project {
     height: 100vh;
@@ -68,8 +81,8 @@ body{
     position: absolute;
     top: 0;
     left: 100vw;
-    border-left: 1px solid $foregroundColor;
-    border-bottom: 1px solid $foregroundColor;
+    border-left: $border;
+    border-bottom: $border;
     }
 
 #contact {
