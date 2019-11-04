@@ -12,6 +12,12 @@ function greet (firstName, lastName, somethingElse) {
   //about.addIndicators();
   about.addTo(controller);
 
+  const controllerAbout = new ScrollMagic.Controller({globalSceneOptions:{triggerHook: "onLeave", duration:"100%"}});
+
+  const aboutMask = new ScrollMagic.Scene({triggerElement: "#hook1"});
+  aboutMask.setTween("#aboutContent", {ease: Power4.easeOut, y: "80vh"});
+  aboutMask.addTo(controllerAbout);
+
   const p1 = new ScrollMagic.Scene({triggerElement: "#hook2"});
   p1.setTween("#p1", {ease: Power2.easeInOut, x: "-100.1vw"});
   //p1.addIndicators();
